@@ -1,5 +1,13 @@
 import axios from 'axios';
 
+export let db = new Array(0);
+
+// if (localStorage.getItem("ems_db") === undefined) {
+//   localStorage.setItem("ems_db", []);
+// } else {
+//   db = localStorage.getItem("ems_db");
+// }
+
 const axiosInstance = axios.create({
   baseURL: "https://ems.rathod.dev/v1"
 });
